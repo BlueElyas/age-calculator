@@ -95,6 +95,10 @@ p {
     flex-direction: column;
 }
 
+input:hover {
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
 input::placeholder {
     color: hsl(0, 0%, 8%);
 }
