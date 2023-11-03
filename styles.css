@@ -105,19 +105,18 @@ input::placeholder {
     body{
         display: flex;
         justify-content: center;
-        align-items: center;
     }
     .container {
-        width: 600px;
+        width: 800px;
         align-items: start;
     }
 
     p{
-        font-size: 64px;
+        font-size: 100px;
     }
 
     .inputs {
-        width: 450px;
+        width: 600px;
     }
 
     .age-inputs{
@@ -132,7 +131,7 @@ input::placeholder {
     }
 
     input{
-        width: 100px;
+        width: 150px;
     }
    
 }
