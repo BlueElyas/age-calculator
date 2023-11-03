@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Age calculator app</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <!-- CSS Sheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <section>
+        <form class="age-inputs" id="form">
+          <div class="inputs">
+            <div class="input-ctn">
+              <label class= "label-dflt" id="label-day" for="day-date">Day</label>
+              <input type="number" placeholder="DD" id="day-date" min="1" max="31" required>
+              <label id="error-no-input1" class="error-no-input">This field is required</label>
+            </div>
+            <div class="input-ctn">
+              <label class= "label-dflt" id="label-month" for="month-date">Month</label>
+              <input type="number" placeholder = "MM" id="month-date" min="1" max="12" required>
+              <label id="error-no-input2" class="error-no-input">This field is required</label>
+            </div>
+            <div class="input-ctn">
+              <label class= "label-dflt" id="label-year" for="year-date">Year</label>
+              <input type="number" placeholder="YYYY" id="year-date" min= "1" max="2023" required>
+              <label id="error-no-input3" class="error-no-input">This field is required</label>
+            </div>
+          </div>
+          <button id="form-btn" class="form-btn"><img src="/assets/images/icon-arrow.svg"></button>
+        </form>
+      </section>
+      <section> <!-- This will be in javascript as textcontent-->
+        <p><span id="age-year-output">--</span> years</p>
+        <p><span id="age-month-output">--</span> months</p>
+        <p><span id="age-day-output">--</span> days</p>
+      </section>
+    </div>
+  </main>
+
+  <!-- <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by Elyas
+    </div>
+  </footer> -->
+  <script src="index.js" type="module"></script>
+</body>
+</html>

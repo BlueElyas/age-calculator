@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;   
+    background-color: hsl(0, 0%, 94%);    
+}
+
+.container, 
+.age-inputs,
+.inputs
+ {
+    display: flex;
+}
+
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px 10px 100px 10px;
+    gap: 30px;
+    padding: 1.25em;
+    margin: 0.5em;
+}
+
+.age-inputs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    padding-bottom: 2em;
+    position: relative;
+}
+
+.inputs {
+    gap: 30px;
+    align-items: center;
+}
+
+input{
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+    color: hsl(0, 0%, 8%);
+    font-weight: 800;
+    font-size: 20px;
+    width: 70px;
+}
+
+.label-dflt {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    color: hsl(0, 1%, 44%);
+}
+
+button {
+    border: none;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding: 1em;
+    position: absolute;
+    top: 100px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+span {
+   color: hsl(259, 100%, 65%); 
+   font-weight: 800;
+}
+
+p {
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 0.9;
+}
+
+.input-ctn {
+    display: flex;
+    flex-direction: column;
+}
+
+input::placeholder {
+    color: hsl(0, 0%, 8%);
+}
+
+
+@media (min-width: 768px) {
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        width: 600px;
+        align-items: start;
+    }
+
+    p{
+        font-size: 64px;
+    }
+
+    .inputs {
+        width: 450px;
+    }
+
+    .age-inputs{
+        padding-bottom: 0.7em;
+        position: relative;
+    }
+
+    button {
+        position: absolute;
+        top: 60%;
+        right: -10%;
+    }
+
+    input{
+        width: 100px;
+    }
+   
+}
+
+/* Error*/
+
+.error-no-input {
+    display: none;
+    color: hsl(0, 100%, 67%);
+    font-size: 0.25em;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.error {
+    border: 1px solid hsl(0, 100%, 67%);
+}
+
+.error-color {
+    color: hsl(0, 100%, 67%);
+}
