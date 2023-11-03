@@ -100,7 +100,7 @@ input:hover {
 }
 
 input::placeholder {
-    color: hsl(0, 0%, 8%);
+    color: hsl(0, 1%, 44%);
 }
 
 
